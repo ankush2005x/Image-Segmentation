@@ -66,7 +66,7 @@ for i in range(num):
 #    print(i)
     for j in range(0, len(read), 2):
 #    	print(i, j)
-    	markers[i].append([read[j], read[j+1]])
+    	markers[i].append([read[j+1], read[j]])
     parent[markers[i][0][0] * width + markers[i][0][1]] = -2
 #    for j in range(1, len(markers[i])):
 #    	parent[markers[i][j][0] * width + markers[i][j][1]] = markers[i][0][0] * width + markers[i][0][1]
